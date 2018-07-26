@@ -1,0 +1,50 @@
+@(camm1 : Aptest ,Camm2 : Aptest,Camm3 : Aptest,Camm4 : Aptest,Camm5 : Aptest,Camm6 : Aptest)
+<table>
+    <tr>
+        <th><h1>สินค้าคงเหลือ</h1></th>
+
+    </tr>
+
+    <tr>
+        <td>
+            <img src="assets/images/img_casio/detailcasio.jpg">
+            @camm1.getId()
+            @camm1.getName()
+            @camm1.getPrice()
+        </td>
+        <td>
+            <img src="assets/images/img_Nikon/detailnikon-1.jpg">
+            @Camm2.getId()
+            @Camm2.getName()
+            @Camm2.getPrice()
+        </td>
+        <td>
+            <img src="assets/images/img_Nikon/detailnikon-2.jpg">
+            @Camm3.getId()
+            @Camm3.getName()
+            @Camm3.getPrice()
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <img src="assets/images/img_Nikon/detailnikon-3.jpg">
+            @Camm4.getId()
+            @Camm4.getName()
+            @Camm4.getPrice()
+        </td>
+        <td>
+            <img src="assets/images/img_Olympus/Olympus-01.jpg">
+            @Camm5.getId()
+            @Camm5.getName()
+            @Camm5.getPrice()
+        </td>
+        <td>
+            <img src="assets/images/img_Sony/detailsony-01.jpg">
+            @Camm6.getId()
+            @Camm6.getName()
+            @Camm6.getPrice()
+        </td>
+    </tr>
+</table>
+

@@ -1,0 +1,53 @@
+@()
+<html>
+    <head>
+        <title>
+            FormProduct
+        </title>
+    </head>
+    <body>
+        <form method="post"  action="/camera_post" >
+            <table>
+                <tr>
+                    <th>ชื่อสินค้า</th>
+                    <td><input  type="text" name="title" size="50" maxlength="40" required> </td>
+                </tr>
+                <tr>
+                    <th>ราคา</th>
+                    <td><input type="number" name="price" size="50" maxlength="40" required> </td>
+                </tr>
+                <tr>
+                    <th>ประเภท</th>
+                    <td>
+                        <select name="cameratype">
+                        <option value="nikon">NIKON</option>
+                        <option value="sony">SONY</option>
+                        <option value="canon">CANON</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>สินค้า</th>
+                    <td>
+                        <input type="radio" name="a" value="สินค้ามีในประเทศไทย"> สินค้ามีในประเทศไทย
+                        <input type="radio" name="a" value="สินค้ามีเฉพาะในต่างประเทศ"> สินค้ามีเฉพาะในต่างประเทศ
+                    </td>
+                </tr>
+                <tr>
+                    <th>ร้านค้าเคยได้รับรางวัล</th>
+                    <td><input type="checkbox" name="aword" value="yes"> </td>
+                </tr>
+                <tr>
+                    <th>รายละเอียด</th>
+                    <td><textarea name="detail" cols="65" rows="5"></textarea> </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit"  value="บันทึก">
+                        <input type="reset" value="ลบข้อมูล">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

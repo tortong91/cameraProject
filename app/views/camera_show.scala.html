@@ -1,0 +1,75 @@
+@(title:String,cameratype:String,a:String,aword:String,detail:String,price:Double)
+<html>
+    <head>
+        <title>
+            ShowCamera
+        </title>
+    <link rel="stylesheet" href="assets\stylesheets\bootstrap3.3.7\css\bootstrap.css">
+    </head>
+    <body>
+        <div class="container">
+            <table class="table table-bordered">
+                <tr>
+                    <th colspan="2">
+                       <h1 align="center"> ข้อมูลสินค้า </h1>
+                    </th>
+
+                </tr>
+                <tr>
+                    <th>
+                        ชื่อสินค้า
+                    </th>
+                    <td>
+                        @title
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        ราคา
+                    </th>
+                    <td>
+                        @price
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        สินค้าในสต๊อค
+                    </th>
+                    <td>
+                        @cameratype
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        ยี้ห้อ
+                    </th>
+                    <td>
+                    @a
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        เคยได้รับรางวัล
+                    </th>
+                    <td>
+                        @aword
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        รายละเอียด
+                    </th>
+                    <td>
+                        @detail
+                    </td>
+                </tr>
+            </table>
+            <center><a href="cameraf"><<กลับ</a>  </center>
+        </div>
+    </body>
+</html>
